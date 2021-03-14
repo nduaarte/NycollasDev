@@ -4,6 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  grid-area: a;
 `;
 
 export const VerticalLine = styled.div`
@@ -25,7 +26,6 @@ export const SubContainer = styled.div`
   justify-content: center;
 `;
 
-
 export const Square = styled.div`
   display: flex;
   align-items: center;
@@ -37,9 +37,4 @@ export const Square = styled.div`
 
   border: 2px solid var(--grey);
   border-radius: 8px;
-`;
-
-export const GhostSpace = styled.div`
-  width: 45px;
-  height: 45px;
 `;

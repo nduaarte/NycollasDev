@@ -1,11 +1,11 @@
 import React from 'react';
-import { FaLock } from 'react-icons/fa';
+import { AiFillLock } from 'react-icons/ai';
 
-import { 
-  Container, 
-  VerticalLine, 
-  SubContainer, 
-  HorizontalLine, 
+import {
+  Container,
+  VerticalLine,
+  SubContainer,
+  HorizontalLine,
   Square
 } from './styles';
 
@@ -17,22 +17,28 @@ interface PropsTypes {
   right?: boolean;
 }
 
-const TreeItem: React.FC<PropsTypes> = ({ Icon = FaLock, top, bottom, left, right}) => {
-  return(
+const TreeItem: React.FC<PropsTypes> = ({
+  Icon = AiFillLock,
+  top,
+  bottom,
+  left,
+  right
+}) => {
+  return (
     <Container>
-      { top ? <VerticalLine /> : null }
+      { top ? <VerticalLine /> : null}
 
       <SubContainer>
-        { left ? <HorizontalLine /> : null }
+        {left ? <HorizontalLine /> : null}
 
         <Square>
-          <Icon />
+          <Icon color='#6B7274' size={24} />
         </Square>
-        
-        { right ? <HorizontalLine /> : null }
+
+        {right ? <HorizontalLine /> : null}
       </SubContainer>
 
-      { bottom ? <VerticalLine /> : null }
+      { bottom ? <VerticalLine /> : null}
     </Container>
   );
 }
