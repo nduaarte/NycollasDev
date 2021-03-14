@@ -38,3 +38,8 @@ export const Square = styled.div`
   border: 2px solid var(--grey);
   border-radius: 8px;
 `;
+
+export const GhostSpace = styled.div`
+  width: 45px;
+  height: 45px;
+`;

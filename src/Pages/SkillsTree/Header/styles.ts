@@ -1,17 +1,10 @@
 import styled from 'styled-components';
+
 import { GiBonsaiTree } from 'react-icons/gi';
 import { AiFillHome } from 'react-icons/ai';
 
-
 export const Container = styled.div`
-  display: flex;
-  margin: 50px 80px;
-
-  /* background: rgb(79,66,111);
-  background: linear-gradient(180deg, rgba(79,66,111,1) 0%, rgba(0,0,0,1) 50%); */
-`;
-
-export const Header = styled.div`
+  padding: 50px 80px;
   width: 100%;
   display: flex;
   align-items: center;

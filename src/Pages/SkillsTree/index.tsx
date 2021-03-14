@@ -1,40 +1,24 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import styled from 'styled-components';
 
-import TreeItem from '../../Components/TreeItem';
-
-import {
-  Container,
-  Header,
-  Tittle,
-  TreeIcon,
-  ButtonBackHome,
-  HomeIcon
-} from './styles';
+import Header from './Header';
+import Tree from './Tree';
 
 const SkillsTree: React.FC = () => {
   return (
     <Container>
-      <Header>
-        <motion.div initial={{ opacity: 0.1 }} animate={{ x: 30, opacity: 1 }} transition={{ ease: 'circOut', duration: 1.5 }}>
-          <Tittle>
-            <TreeIcon />
-            <h1>Árvore de Habilidades</h1>
-          </Tittle>
-        </motion.div>
-
-        <motion.div whileHover={{ scale: 1.1 }}>
-          <ButtonBackHome>
-            <HomeIcon />
-          </ButtonBackHome>
-        </motion.div>
-      </Header>
-
-      <TreeContainer>
-
-      </TreeContainer>
+      <Header />
+      <Tree />
     </Container>
   );
 }
 
 export default SkillsTree;
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  /* background: rgb(79,66,111);
+  background: linear-gradient(180deg, rgba(79,66,111,1) 0%, rgba(0,0,0,1) 50%); */
+`;

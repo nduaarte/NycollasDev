@@ -6,7 +6,7 @@ import {
   VerticalLine, 
   SubContainer, 
   HorizontalLine, 
-  Square 
+  Square
 } from './styles';
 
 interface PropsTypes {
@@ -23,13 +23,13 @@ const TreeItem: React.FC<PropsTypes> = ({ Icon = FaLock, top, bottom, left, righ
       { top ? <VerticalLine /> : null }
 
       <SubContainer>
-        { left ? <HorizontalLine /> : null}
+        { left ? <HorizontalLine /> : null }
 
         <Square>
           <Icon />
         </Square>
         
-        { right ? <HorizontalLine /> : null}
+        { right ? <HorizontalLine /> : null }
       </SubContainer>
 
       { bottom ? <VerticalLine /> : null }
