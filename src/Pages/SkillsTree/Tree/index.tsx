@@ -23,15 +23,15 @@ const Tree: React.FC = () => {
 
         <Itens>
           <Item1>
-            <TreeItem bottom Icon={SiJavascript} />
+            <TreeItem bottom Icon={SiJavascript} color='#B2A639' />
           </Item1>
 
           <Item2>
-            <TreeItem bottom Icon={SiReact} />
+            <TreeItem bottom Icon={SiReact} iconSize={36} color='#396A97' />
           </Item2>
 
           <Item3>
-            <TreeItem bottom left right Icon={IoLogoJavascript} />
+            <TreeItem bottom left right Icon={IoLogoJavascript} color='#B2A639' />
           </Item3>
 
           <Item4>
@@ -43,7 +43,7 @@ const Tree: React.FC = () => {
           </Item5>
 
           <Item6>
-            <TreeItem Icon={FaGitSquare} />
+            <TreeItem Icon={FaGitSquare} color='#9F5830' />
           </Item6>
 
           <Item7>
@@ -51,7 +51,7 @@ const Tree: React.FC = () => {
           </Item7>
 
           <Item8>
-            <TreeItem Icon={SiStyledComponents} />
+            <TreeItem Icon={SiStyledComponents} color='#A94699' />
           </Item8>
 
           <Item9>
@@ -59,21 +59,20 @@ const Tree: React.FC = () => {
           </Item9>
 
           <Item10>
-            <TreeItem bottom Icon={GiHook} />
+            <TreeItem bottom Icon={GiHook} color='#396A97' />
           </Item10>
 
           <Item11>
-            <TreeItem Icon={SiTypescript} />
+            <TreeItem Icon={SiTypescript} color='#2E469A' />
           </Item11>
 
           <Item12>
-            <TreeItem Icon={SiRedux} />
+            <TreeItem Icon={SiRedux} color='#523188' />
           </Item12>
 
           <Item13>
             <TreeItem />
           </Item13>
-
 
         </Itens>
       </HardSkills>

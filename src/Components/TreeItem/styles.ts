@@ -4,18 +4,17 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  grid-area: a;
 `;
 
 export const VerticalLine = styled.div`
   border-left: 2px solid var(--grey);
-  height: 45px;
+  height: 50px;
   left: 50%;
 `;
 
 export const HorizontalLine = styled.div`
   border-top: 2px solid var(--grey);
-  width: 45px;
+  width: 50px;
   left: 50%;
 `;
 
@@ -31,10 +30,9 @@ export const Square = styled.div`
   align-items: center;
   justify-content: center;
 
-  width: 45px;
-  height: 45px;
-  background-color: var(--darkGrey);
+  width: 50px;
+  height: 50px;
 
-  border: 2px solid var(--grey);
+  border: 2px solid ${props => props.color};
   border-radius: 8px;
 `;

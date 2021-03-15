@@ -26,8 +26,8 @@ export const HardSkills = styled.div`
 export const Itens = styled.div`
   display: grid;
 
-  grid-template-columns: 90px 90px 90px 90px;
-  grid-template-rows: 90px 90px 90px 90px 90px;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px 100px;
   grid-template-areas:  
                 ". . a ."
                 ". b c d"

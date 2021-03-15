@@ -8,7 +8,7 @@ export default createGlobalStyle `
   }
   html {
     min-height: 100%;
-    background: #fff;
+    background: var(--background);
   }
   *, button, input {
     border: none;
@@ -18,6 +18,7 @@ export default createGlobalStyle `
   ul {
     list-style: none;
   }
+
   :root {
     --background: #1B191B;
     --white: #ffffff;
@@ -27,5 +28,12 @@ export default createGlobalStyle `
     --primary: #7750e9;
     --secundary: #4f426f;
     --pink: rgba(247,1,96,0.4);
+
+    --javascript: #B2A639;
+    --react: #396A97;
+    --git: #9F5830;
+    --typeScript: #2E469A;
+    --redux: #523188;
+    --styledComponents: #A94699;
   }
 `

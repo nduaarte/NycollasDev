@@ -11,6 +11,9 @@ import {
 
 interface PropsTypes {
   Icon?: any;
+  iconSize?: number;
+  color?: string;
+
   top?: boolean;
   bottom?: boolean;
   left?: boolean;
@@ -19,6 +22,8 @@ interface PropsTypes {
 
 const TreeItem: React.FC<PropsTypes> = ({
   Icon = AiFillLock,
+  iconSize = 24,
+  color = '#6B7274',
   top,
   bottom,
   left,
@@ -31,8 +36,8 @@ const TreeItem: React.FC<PropsTypes> = ({
       <SubContainer>
         {left ? <HorizontalLine /> : null}
 
-        <Square>
-          <Icon color='#6B7274' size={24} />
+        <Square color={color}>
+          <Icon color={color} size={iconSize} />
         </Square>
 
         {right ? <HorizontalLine /> : null}
