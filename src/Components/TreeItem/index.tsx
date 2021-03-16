@@ -6,7 +6,8 @@ import {
   VerticalLine,
   SubContainer,
   HorizontalLine,
-  Square
+  Square,
+  BlockSquare
 } from './styles';
 
 interface PropsTypes {
@@ -22,8 +23,8 @@ interface PropsTypes {
 
 const TreeItem: React.FC<PropsTypes> = ({
   Icon = AiFillLock,
-  iconSize = 24,
-  color = '#6B7274',
+  iconSize,
+  color,
   top,
   bottom,
   left,
@@ -36,9 +37,17 @@ const TreeItem: React.FC<PropsTypes> = ({
       <SubContainer>
         {left ? <HorizontalLine /> : null}
 
-        <Square color={color}>
-          <Icon color={color} size={iconSize} />
-        </Square>
+        {
+          Icon === AiFillLock ? (
+            <BlockSquare>
+              <Icon size={24} color='#6B7274' />
+            </BlockSquare>
+          ) : (
+            <Square color={color}>
+              <Icon color={color} size={iconSize} />
+            </Square>
+          )
+        }
 
         {right ? <HorizontalLine /> : null}
       </SubContainer>

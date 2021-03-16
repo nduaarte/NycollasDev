@@ -10,9 +10,9 @@ export const Container = styled.div`
 
 export const Title = styled.h2`
   display: flex;
-  margin-left: 90px;
+  margin-left: 98px;
   font-size: 42px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   color: var(--darkGrey);
 `;
 
@@ -26,8 +26,8 @@ export const HardSkills = styled.div`
 export const Itens = styled.div`
   display: grid;
 
-  grid-template-columns: 100px 100px 100px 100px;
-  grid-template-rows: 100px 100px 100px 100px 100px;
+  grid-template-columns: 94px 94px 94px 94px;
+  grid-template-rows: 94px 94px 94px 94px 94px;
   grid-template-areas:  
                 ". . a ."
                 ". b c d"

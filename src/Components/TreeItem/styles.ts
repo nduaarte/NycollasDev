@@ -8,13 +8,13 @@ export const Container = styled.div`
 
 export const VerticalLine = styled.div`
   border-left: 2px solid var(--grey);
-  height: 50px;
+  height: 47px;
   left: 50%;
 `;
 
 export const HorizontalLine = styled.div`
   border-top: 2px solid var(--grey);
-  width: 50px;
+  width: 47px;
   left: 50%;
 `;
 
@@ -25,14 +25,39 @@ export const SubContainer = styled.div`
   justify-content: center;
 `;
 
-export const Square = styled.div`
+export const Square = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
 
-  width: 50px;
-  height: 50px;
+  width: 47px;
+  height: 47px;
+  outline: none;
 
-  border: 2px solid ${props => props.color};
+  border: 2px solid var(--darkGrey);
+  border-radius: 8px;
+
+  :hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 15px ${props => props.color};
+    border: 2px solid ${props => props.color};
+  }
+
+  :focus {
+    box-shadow: 0px 0px 30px ${props => props.color};
+    border: 2px solid ${props => props.color};
+  }
+`;
+
+export const BlockSquare = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 47px;
+  height: 47px;
+
+  background-color: var(--darkGrey);
+  border: 2px solid var(--grey);
   border-radius: 8px;
 `;
