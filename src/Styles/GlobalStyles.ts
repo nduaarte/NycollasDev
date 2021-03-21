@@ -1,10 +1,25 @@
 import { createGlobalStyle } from 'styled-components';
 
-export default createGlobalStyle `
+export default createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    // width 
+    ::-webkit-scrollbar {
+      width: 15px;
+    }
+
+    // Track 
+    ::-webkit-scrollbar-track {
+      background: var(--grey); 
+    }
+  
+    // Handle 
+    ::-webkit-scrollbar-thumb {
+      background: var(--darkGrey); 
+    }
   }
   html {
     min-height: 100%;
@@ -20,20 +35,13 @@ export default createGlobalStyle `
   }
 
   :root {
-    --background: #1B191B;
+    --primary: #BB86FC;
+    --secundary: #4f426f;
+    --background: #121212;
+
     --white: #ffffff;
     --darkWhite: #D9D9D9;
     --grey: #6B7274;
     --darkGrey: #3C3E40;
-    --primary: #7750e9;
-    --secundary: #4f426f;
-    --pink: rgba(247,1,96,0.4);
-
-    --javascript: #B2A639;
-    --react: #396A97;
-    --git: #9F5830;
-    --typeScript: #2E469A;
-    --redux: #523188;
-    --styledComponents: #A94699;
   }
 `

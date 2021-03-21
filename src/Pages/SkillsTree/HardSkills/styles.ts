@@ -2,10 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  width: 100%;
-  justify-content: space-between;
-  
-  padding: 0 140px;
+  align-items: center;
+  flex-direction: column;
 `;
 
 export const Title = styled.h2`
@@ -14,13 +12,6 @@ export const Title = styled.h2`
   font-size: 42px;
   margin-bottom: 25px;
   color: var(--darkGrey);
-`;
-
-export const HardSkills = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 33%;
 `;
 
 export const Itens = styled.div`
@@ -87,6 +78,3 @@ export const Item12 = styled.div`
 export const Item13 = styled.div`
   grid-area: m;
 `;
-
-
-export const KnownSkills = styled.div``;

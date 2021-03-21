@@ -4,13 +4,15 @@ import { GiBonsaiTree } from 'react-icons/gi';
 import { AiFillHome } from 'react-icons/ai';
 
 export const Container = styled.div`
-  padding: 50px 80px;
-  width: 100%;
   display: flex;
   align-items: center;
-
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  
+  margin: 30px 80px 50px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--darkGrey);
+
 `;
 
 export const Tittle = styled.div`
@@ -22,14 +24,14 @@ export const Tittle = styled.div`
     width: 80%;
     font-size: 48px;
     font-weight: 700;
-    color: var(--grey);
+    color: var(--darkWhite);
   }
 `;
 
 export const TreeIcon = styled(GiBonsaiTree)`
   width: 100px;
   height: 100px;
-  color: var(--grey);
+  color: var(--darkWhite);
   margin-right: 15px;
 `;
 

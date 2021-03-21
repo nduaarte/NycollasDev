@@ -34,17 +34,17 @@ export const Square = styled.button`
   height: 47px;
   outline: none;
 
-  border: 2px solid var(--darkGrey);
+  background-color: var(--blue);
+  border: 2px solid var(--grey);
   border-radius: 8px;
 
   :hover {
     cursor: pointer;
-    box-shadow: 0px 0px 15px ${props => props.color};
     border: 2px solid ${props => props.color};
   }
 
   :focus {
-    box-shadow: 0px 0px 30px ${props => props.color};
+    box-shadow: 0px 0px 12px ${props => props.color};
     border: 2px solid ${props => props.color};
   }
 `;
@@ -60,4 +60,8 @@ export const BlockSquare = styled.div`
   background-color: var(--darkGrey);
   border: 2px solid var(--grey);
   border-radius: 8px;
+
+  :hover {
+    cursor: not-allowed;
+  }
 `;

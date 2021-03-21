@@ -2,13 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Header from './Header';
-import Tree from './Tree';
+import HardSkills from './HardSkills';
+import KnowSkills from './KnowSkills';
 
 const SkillsTree: React.FC = () => {
   return (
     <Container>
       <Header />
-      <Tree />
+
+      <Trees>
+        <HardSkills />
+        <KnowSkills />
+      </Trees>
     </Container>
   );
 }
@@ -18,7 +23,11 @@ export default SkillsTree;
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+`;
 
-  /* background: rgb(79,66,111);
-  background: linear-gradient(180deg, rgba(79,66,111,1) 0%, rgba(0,0,0,1) 50%); */
+const Trees = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 25px;
 `;

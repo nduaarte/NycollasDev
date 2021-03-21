@@ -1,14 +1,7 @@
 import React from 'react';
 import { AiFillLock } from 'react-icons/ai';
 
-import {
-  Container,
-  VerticalLine,
-  SubContainer,
-  HorizontalLine,
-  Square,
-  BlockSquare
-} from './styles';
+import { Container, VerticalLine, SubContainer, HorizontalLine, Square, BlockSquare } from './styles';
 
 interface PropsTypes {
   Icon?: any;
@@ -21,15 +14,7 @@ interface PropsTypes {
   right?: boolean;
 }
 
-const TreeItem: React.FC<PropsTypes> = ({
-  Icon = AiFillLock,
-  iconSize,
-  color,
-  top,
-  bottom,
-  left,
-  right
-}) => {
+const TreeItem: React.FC<PropsTypes> = ({Icon = AiFillLock, iconSize, color, top, bottom, left, right }) => {
   return (
     <Container>
       { top ? <VerticalLine /> : null}
