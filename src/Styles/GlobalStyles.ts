@@ -39,9 +39,11 @@ export default createGlobalStyle`
     --secundary: #4f426f;
     --background: #121212;
 
-    --white: #ffffff;
+    --lightWhite: #ffffff;
+    --white: #f0f0f0;
     --darkWhite: #D9D9D9;
-    --grey: #6B7274;
-    --darkGrey: #3C3E40;
+    --grey: #484d4f;
+    --darkGrey: #2d2f30;
+    --darkerGrey: #1c1c1c;
   }
 `

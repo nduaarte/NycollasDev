@@ -23,6 +23,7 @@ export default SkillsTree;
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  margin: 10px 0 40px;
 `;
 
 const Trees = styled.div`

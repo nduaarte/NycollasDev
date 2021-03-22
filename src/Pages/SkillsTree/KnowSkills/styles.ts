@@ -3,7 +3,10 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
+
+  background-color: var(--darkerGrey);
 `;
 
 export const Title = styled.h2`
@@ -11,7 +14,7 @@ export const Title = styled.h2`
   margin-right: 98px;
   font-size: 42px;
   margin-bottom: 25px;
-  color: var(--darkGrey);
+  color: var(--grey);
 `;
 
 export const Itens = styled.div`

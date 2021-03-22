@@ -3,28 +3,32 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
+
+  padding: 10px;
+  border-radius: 20px;
+  background-color: var(--darkerGrey);
 `;
 
 export const Title = styled.h2`
   display: flex;
-  margin-left: 98px;
   font-size: 42px;
   margin-bottom: 25px;
-  color: var(--darkGrey);
+  color: var(--grey);
 `;
 
 export const Itens = styled.div`
   display: grid;
 
-  grid-template-columns: 94px 94px 94px 94px;
+  grid-template-columns: 94px 94px 94px 94px 94px;
   grid-template-rows: 94px 94px 94px 94px 94px;
   grid-template-areas:  
-                ". . a ."
-                ". b c d"
-                ". e f g"
-                "h i j k"
-                ". l m .";
+                ". . a . ."
+                ". b c d z"
+                ". e f g ."
+                "h i j k ."
+                ". l m . .";
 `;
 
 export const Item1 = styled.div`
@@ -77,4 +81,8 @@ export const Item12 = styled.div`
 
 export const Item13 = styled.div`
   grid-area: m;
+`;
+
+export const ItemZ = styled.div`
+  grid-area: z;
 `;
