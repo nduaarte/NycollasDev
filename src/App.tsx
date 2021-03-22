@@ -1,13 +1,15 @@
 import { Route, Switch } from 'react-router-dom'
+import { Provider } from 'react-redux';
 
 import GlobalStyles from './Styles/GlobalStyles';
+import { store } from './redux/index'
 
 import Landing from './Pages/Landing';
 import SkillsTree from './Pages/SkillsTree';
 
 const App: React.FC = () => {
   return (
-    <>
+    <Provider store={store}>
       <GlobalStyles />
 
       <Switch>
@@ -16,7 +18,7 @@ const App: React.FC = () => {
         {/* <Route path="/About" component={About}/> */}
         {/* <Route path="/Projects" component={Projects}/> */}
       </Switch>
-    </>
+    </Provider>
   );
 }
 

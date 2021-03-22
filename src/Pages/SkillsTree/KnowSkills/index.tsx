@@ -11,7 +11,7 @@ import {
   Container,
   Title,
   Itens,
-  Item1, Item2, Item3, Item4, Item5, Item6, Item7, Item8, Item9, Item10, Item11
+  Item1, Item2, Item3, Item4, Item5, Item6, Item7, Item8, Item9, Item10, Item11, ItemZ
 } from './styles';
 
 
@@ -26,8 +26,12 @@ const KnowSkills: React.FC = () => {
             <TreeItem bottom />
           </Item1>
 
+          <ItemZ>
+            <TreeItem />
+          </ItemZ>
+
           <Item2>
-            <TreeItem bottom Icon={RiMacLine} iconSize={30} color='#B2A639' />
+            <TreeItem left right bottom Icon={RiMacLine} iconSize={30} color='#B2A639' />
           </Item2>
 
           <Item3>
@@ -43,7 +47,7 @@ const KnowSkills: React.FC = () => {
           </Item5>
 
           <Item6>
-            <TreeItem left right bottom />
+            <TreeItem bottom />
           </Item6>
 
           <Item7>
@@ -63,7 +67,7 @@ const KnowSkills: React.FC = () => {
           </Item10>
 
           <Item11>
-            <TreeItem Icon={SiJest} iconSize={28} color='#589C23' />
+            <TreeItem Icon={SiJest} iconSize={28} color='#6abd2a' />
           </Item11>
         </Itens>
       </Container>

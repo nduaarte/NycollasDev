@@ -6,12 +6,13 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
 
+  padding: 10px;
+  border-radius: 20px;
   background-color: var(--darkerGrey);
 `;
 
 export const Title = styled.h2`
   display: flex;
-  margin-right: 98px;
   font-size: 42px;
   margin-bottom: 25px;
   color: var(--grey);
@@ -20,14 +21,14 @@ export const Title = styled.h2`
 export const Itens = styled.div`
   display: grid;
 
-  grid-template-columns: 94px 94px 94px 94px;
+  grid-template-columns: 94px 94px 94px 94px 94px;
   grid-template-rows: 94px 94px 94px 94px 94px;
   grid-template-areas:  
-                ". a . ."
-                "b c d ."
-                "e f g h"
-                ". i . j"
-                ". k . .";
+                ". . a . ."
+                "z b c d ."
+                ". e f g h"
+                ". . i . j"
+                ". . k . .";
 `;
 
 export const Item1 = styled.div`
@@ -72,4 +73,8 @@ export const Item10 = styled.div`
 
 export const Item11 = styled.div`
   grid-area: k;
+`;
+
+export const ItemZ = styled.div`
+  grid-area: z;
 `;
