@@ -13,6 +13,9 @@ export const Container = styled.div`
   padding-bottom: 30px;
   border-bottom: 1px solid var(--darkGrey);
 
+  @media (max-width: 900px) {
+    margin: 10px;
+  }
 `;
 
 export const Tittle = styled.div`
@@ -21,10 +24,14 @@ export const Tittle = styled.div`
   align-items: center;
 
   h1 {
-    width: 80%;
+    width: 60%;
     font-size: 48px;
     font-weight: 700;
     color: var(--darkWhite);
+
+    @media (max-width: 900px) {
+      font-size: 28px;
+    }
   }
 `;
 
@@ -33,6 +40,11 @@ export const TreeIcon = styled(GiBonsaiTree)`
   height: 100px;
   color: var(--darkWhite);
   margin-right: 15px;
+
+  @media (max-width: 900px) {
+    width: 65px;
+    height: 65px;
+  }
 `;
 
 
@@ -40,16 +52,25 @@ export const HomeIcon = styled(AiFillHome)`
   width: 35px;
   height: 35px;
   color: var(--white);
+
+  @media (max-width: 900px) {
+    width: 28px;
+    height: 28px;
+  }
 `;
 
 export const ButtonBackHome = styled.button`
-  background-color: var(--primary);
+  background-color: var(--grey);
   padding: 4px 20px;
-
   outline: none;
   border-radius: 7px;
 
   :hover {
     cursor: pointer;
+  }
+
+  @media (max-width: 900px) {
+    padding: 2px 15px;
+    border-radius: 4px;
   }
 `;

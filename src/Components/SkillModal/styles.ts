@@ -14,18 +14,40 @@ export const Container = styled.button`
 `;
 
 export const Modal = styled.div`
+  border-radius: 2%;
   background-color: var(--darkerGrey);
+  padding: 30px;
 
-  width: 60%;
+  width: 50%;
   height: 60%;
 `;
 
-export const Image = styled.img``;
+export const Image = styled.img`
+  width: 80%;
+  height: 50%;
+  border-radius: 7px;
+`;
 
-export const Description = styled.div``;
+export const Description = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;
 
-export const Title = styled.h4``;
+export const Title = styled.h2`
+  margin: 20px 0 0;
+  color: var(--darkWhite);
+`;
 
-export const DataContact = styled.span``;
+export const DataContact = styled.span`
+  margin-top: -5px;
+  font-size: 38px;
+  color: var(--grey);
+  font-weight: bold;
+`;
 
-export const MotivationText = styled.p``;
+export const MotivationText = styled.span`
+  color: var(--grey);
+  text-align: left;
+  font-weight: bold;
+`;

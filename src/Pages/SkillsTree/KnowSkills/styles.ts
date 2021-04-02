@@ -6,6 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
 
+  margin: 10px 0;
   padding: 10px;
   border-radius: 20px;
   background-color: var(--darkerGrey);
@@ -16,6 +17,10 @@ export const Title = styled.h2`
   font-size: 42px;
   margin-bottom: 25px;
   color: var(--grey);
+
+  @media (max-width: 900px) {
+    font-size: 34px;
+  }
 `;
 
 export const Itens = styled.div`
@@ -24,12 +29,19 @@ export const Itens = styled.div`
   grid-template-columns: 94px 94px 94px 94px 94px;
   grid-template-rows: 94px 94px 94px 94px 94px;
   grid-template-areas:  
-                ". . a . ."
-                "z b c d ."
-                ". e f g h"
-                ". . i . j"
-                ". . k . .";
+    ". . a . ."
+    "z b c d ."
+    ". e f g h"
+    ". . i . j"
+    ". . k . ."
+  ;
+
+  @media (max-width: 1100px) {
+    grid-template-columns: 60px 60px 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px 60px 60px;
+  }
 `;
+
 
 export const Item1 = styled.div`
   grid-area: a;

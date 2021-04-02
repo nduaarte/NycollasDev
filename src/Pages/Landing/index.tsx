@@ -20,7 +20,7 @@ import {
 const Landing: React.FC = () => {
   return (
     <Container>
-      <motion.div initial={{ opacity: 0.1}} animate={{ x: 30, opacity: 1 }} transition={{ ease: 'circOut', duration: 1.5 }}>
+      <motion.div initial={{ x: -30 ,opacity: 0.1}} animate={{ x: 0, opacity: 1 }} transition={{ ease: 'circOut', duration: 1.5 }}>
         <TitleContainer>
           <h1>Nycollas Duarte</h1>
           <h3>Mobile Developer | React Native</h3>

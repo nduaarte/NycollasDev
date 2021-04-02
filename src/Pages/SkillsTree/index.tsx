@@ -43,4 +43,8 @@ const Trees = styled.div`
   flex-direction: row;
   justify-content: space-around;
   margin: 0 25px;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
 `;

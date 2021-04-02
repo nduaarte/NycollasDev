@@ -9,13 +9,11 @@ import { RiCopyrightLine } from 'react-icons/ri';
 export const Container = styled.div`
   height: 100vh;
   display: flex;
+  padding: 20px 0;
 
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-
-  background: rgb(0,0,0);
-  background: radial-gradient(circle, rgba(0,0,0,1) 40%, rgba(34,28,48,1) 100%);
+  justify-content: space-between;
 `;
 
 export const LightsContainer = styled.div`
@@ -29,16 +27,22 @@ export const TitleContainer = styled.div`
   flex-direction: column;
   align-items: center;
 
-  margin: 20px 50px 0 0;
-
   h1 {
     font-size: 48px;
     color: var(--white);
+
+    @media (max-width: 600px) {
+    font-size: 36px;
+    }
   }
 
   h3 {
     color: var(--darkWhite);
     font-size: 16px;
+
+    @media (max-width: 600px) {
+    font-size: 10px;
+    }
   }
 `;
 
@@ -47,10 +51,31 @@ export const ButtonsContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  width: 40%;
 
-  margin-top: 65px;
-  width: 30%;
-  height: 30%;
+  @media (max-width: 1030px) {
+    width: 30%;
+  }
+
+  @media (max-width: 840px) {
+    width: 40%;
+  }
+
+  @media (max-width: 630px) {
+    width: 50%;
+  }
+
+  @media (max-width: 505px) {
+    width: 60%;
+  }
+
+  @media (max-width: 430px) {
+    width: 80%;
+  }
+
+  @media (max-width: 315px) {
+    width: 90%;
+  }
 `;
 
 const iconCSS = css`
@@ -60,6 +85,11 @@ const iconCSS = css`
 
   :hover {
     color: var(--primary);
+  }
+
+  @media (max-width: 1030px) {
+    width: 20px;
+    height: 20px;
   }
 `;
 
@@ -88,6 +118,11 @@ export const Button1 = styled.button`
   &:hover ${TreeIcon} {
     color: var(--primary);
   }
+
+  @media (max-width: 1030px) {
+    width: 120px;
+    height: 120px;
+  }
 `;
 
 export const Button2 = styled.button`
@@ -111,6 +146,11 @@ export const Button2 = styled.button`
 
   &:hover ${UserIcon} {
     color: var(--primary);
+  }
+
+  @media (max-width: 1030px) {
+    width: 120px;
+    height: 120px;
   }
 `;
 
@@ -136,6 +176,11 @@ export const Button3 = styled.button`
   &:hover ${ProjectIcon} {
     color: var(--primary);
   }
+
+  @media (max-width: 1030px) {
+    width: 120px;
+    height: 120px;
+  }
 `;
 
 export const Button4 = styled.button`
@@ -160,14 +205,23 @@ export const Button4 = styled.button`
   &:hover ${GithubIcon} {
     color: var(--primary);
   }
+
+  @media (max-width: 1030px) {
+    width: 120px;
+    height: 120px;
+  }
 `;
 
 export const Footer = styled.div`
   display: flex;
   align-items: center;
 
-  margin: 110px 0 20px;
   color: var(--grey);
+  font-weight: bold;
+
+  @media (max-width: 600px) {
+    font-size: 14px;
+  }
 `;
 
 export const CopyIcon = styled(RiCopyrightLine)`

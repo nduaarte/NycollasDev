@@ -10,12 +10,20 @@ export const VerticalLine = styled.div`
   border-left: 2px solid var(--grey);
   height: 47px;
   left: 50%;
+
+  @media (max-width: 1100px) {
+    height: 30px;
+  }
 `;
 
 export const HorizontalLine = styled.div`
   border-top: 2px solid var(--grey);
   width: 47px;
   left: 50%;
+
+  @media (max-width: 1100px) {
+    width: 30px;
+  }
 `;
 
 export const SubContainer = styled.div`
@@ -47,6 +55,12 @@ export const Square = styled.button`
     box-shadow: 0px 0px 12px ${props => props.color};
     border: 2px solid ${props => props.color};
   }
+
+  @media (max-width: 1100px) {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+  }
 `;
 
 export const BlockSquare = styled.div`
@@ -64,4 +78,15 @@ export const BlockSquare = styled.div`
   :hover {
     cursor: not-allowed;
   }
+
+  @media (max-width: 1100px) {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+  }
 `;
+
+export const Icon = styled.div`
+  width: 100px;
+  height: 100px;
+`

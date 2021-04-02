@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Container, Modal, Image, Description, Title, DataContact, MotivationText } from './styles';
+import code from '../../assets/images/code.png';
 
 interface PropsTypes {
   onClose?: any;
@@ -15,7 +16,7 @@ const SkillModal: React.FC<PropsTypes> = ({onClose = () => {}}) => {
   return (
     <Container id={id} onClick={handlOutsideClick} >
       <Modal>
-        <Image />
+        <Image src={code} />
         <Description>
           <Title>Primeiro Contato</Title>
           <DataContact>Setembro 2020</DataContact>

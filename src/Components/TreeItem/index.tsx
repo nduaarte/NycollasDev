@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { AiFillLock } from 'react-icons/ai';
 
 import { Container, VerticalLine, SubContainer, HorizontalLine, Square, BlockSquare } from './styles';
@@ -15,6 +15,13 @@ interface PropsTypes {
 }
 
 const TreeItem: React.FC<PropsTypes> = ({Icon = AiFillLock, iconSize, color, top, bottom, left, right }) => {
+  const windowWidth = window.innerWidth;
+  const [isHandleIcon, setIsHandleIcon] = useState(false);
+
+  useEffect(() => {
+    windowWidth < 1100 ? setIsHandleIcon(true) : setIsHandleIcon(false);
+  }, [windowWidth]);
+
   return (
     <Container>
       { top ? <VerticalLine /> : null}
@@ -25,11 +32,11 @@ const TreeItem: React.FC<PropsTypes> = ({Icon = AiFillLock, iconSize, color, top
         {
           Icon === AiFillLock ? (
             <BlockSquare>
-              <Icon size={24} color='#6B7274' />
+              <Icon size={19} color='#6B7274' />
             </BlockSquare>
           ) : (
             <Square color={color}>
-              <Icon color={color} size={iconSize} />
+              <Icon color={color} size={18} />
             </Square>
           )
         }
