@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from "react-router-dom";
 import { motion } from 'framer-motion';
 
 import {
@@ -18,9 +19,15 @@ import {
 } from './styles';
 
 const Landing: React.FC = () => {
+  const history = useHistory();
+
+  function navigate(route: string) {
+    history.push(route);
+  }
+
   return (
     <Container>
-      <motion.div initial={{ x: -30 ,opacity: 0.1}} animate={{ x: 0, opacity: 1 }} transition={{ ease: 'circOut', duration: 1.5 }}>
+      <motion.div initial={{ x: -30, opacity: 0.1 }} animate={{ x: 0, opacity: 1 }} transition={{ ease: 'circOut', duration: 1.5 }}>
         <TitleContainer>
           <h1>Nycollas Duarte</h1>
           <h3>Mobile Developer | React Native</h3>
@@ -28,7 +35,7 @@ const Landing: React.FC = () => {
       </motion.div>
 
       <ButtonsContainer>
-        <Button1>
+        <Button1 onClick={() => navigate('/SkillsTree')}>
           <TreeIcon />
         </Button1>
 
@@ -40,9 +47,11 @@ const Landing: React.FC = () => {
           <ProjectIcon />
         </Button3>
 
-        <Button4>
-          <GithubIcon />
-        </Button4>
+        <a href="https://github.com/redspaace" target="_blank" rel="noreferrer">
+          <Button4>
+            <GithubIcon />
+          </Button4>
+        </a>
       </ButtonsContainer>
 
       <Footer>

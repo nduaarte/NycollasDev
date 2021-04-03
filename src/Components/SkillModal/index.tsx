@@ -1,4 +1,5 @@
 import React from 'react';
+import { CgArrowLongRightL } from 'react-icons/cg';
 
 import { Container, Modal, Image, Description, Title, DataContact, MotivationText } from './styles';
 import code from '../../assets/images/code.png';
@@ -19,7 +20,10 @@ const SkillModal: React.FC<PropsTypes> = ({onClose = () => {}}) => {
         <Image src={code} />
         <Description>
           <Title>Primeiro Contato</Title>
-          <DataContact>Setembro 2020</DataContact>
+          <DataContact>
+            <CgArrowLongRightL />
+            Setembro 2020
+          </DataContact>
           <Title>Motivação</Title>
           <MotivationText>
             Quando eu usava apenas JavaScript em meus projetos e via

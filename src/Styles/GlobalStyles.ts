@@ -42,6 +42,7 @@ export default createGlobalStyle`
     --lightWhite: #ffffff;
     --white: #f0f0f0;
     --darkWhite: #D9D9D9;
+    --darkerWhite: #bdbdbd;
     --grey: #484d4f;
     --darkGrey: #2d2f30;
     --darkerGrey: #1c1c1c;

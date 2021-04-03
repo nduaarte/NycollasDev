@@ -23,9 +23,14 @@ export const Modal = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 80%;
+  width: 90%;
   height: 50%;
   border-radius: 7px;
+
+  @media (max-width: 900px) {
+    width: 250px;
+    height: 180px;
+  }
 `;
 
 export const Description = styled.div`
@@ -40,6 +45,9 @@ export const Title = styled.h2`
 `;
 
 export const DataContact = styled.span`
+  display: flex;
+  align-items: center;
+  
   margin-top: -5px;
   font-size: 38px;
   color: var(--grey);

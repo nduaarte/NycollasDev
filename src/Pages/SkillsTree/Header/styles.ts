@@ -47,7 +47,6 @@ export const TreeIcon = styled(GiBonsaiTree)`
   }
 `;
 
-
 export const HomeIcon = styled(AiFillHome)`
   width: 35px;
   height: 35px;

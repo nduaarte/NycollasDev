@@ -2,12 +2,13 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 import Header from './Header';
+import InfoTodo from './InfoTodo';
 import SkillModal from '../../Components/SkillModal'
 import HardSkills from './HardSkills';
 import KnowSkills from './KnowSkills';
 
 const SkillsTree: React.FC = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
 
   function toggle() {
     return setIsVisible(!isVisible);
@@ -20,7 +21,7 @@ const SkillsTree: React.FC = () => {
   return (
     <Container>
       <Header />
-
+      <InfoTodo />
       <Trees>
         <HardSkills />
         {isVisible ? <SkillModal onClose={() => setIsVisible(false)} /> : null}
@@ -48,3 +49,4 @@ const Trees = styled.div`
     flex-direction: column;
   }
 `;
+
