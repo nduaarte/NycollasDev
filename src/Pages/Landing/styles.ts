@@ -37,7 +37,7 @@ export const TitleContainer = styled.div`
   }
 
   h3 {
-    color: var(--darkWhite);
+    color: var(--secundary);
     font-size: 16px;
 
     @media (max-width: 600px) {
@@ -109,7 +109,7 @@ export const Button1 = styled.button`
 
   :hover {
     cursor: pointer;
-    background-color: var(--secundary);
+    background-color: var(--primaryDark);
     border: 3px solid var(--primary);
 
     box-shadow: 0px 0px 100px rgba(255, 251, 251, 0.15);
@@ -138,7 +138,7 @@ export const Button2 = styled.button`
 
   :hover {
     cursor: pointer;
-    background-color: var(--secundary);
+    background-color: var(--primaryDark);
     border: 3px solid var(--primary);
 
     box-shadow: 0px 0px 100px rgba(255, 251, 251, 0.15);
@@ -167,7 +167,7 @@ export const Button3 = styled.button`
 
   :hover {
     cursor: pointer;
-    background-color: var(--secundary);
+    background-color: var(--primaryDark);
     border: 3px solid var(--primary);
 
     box-shadow: 0px 0px 100px rgba(255, 251, 251, 0.15);
@@ -196,7 +196,7 @@ export const Button4 = styled.button`
 
   :hover {
     cursor: pointer;
-    background-color: var(--secundary);
+    background-color: var(--primaryDark);
     border: 3px solid var(--primary);
 
     box-shadow: 0px 0px 100px rgba(255, 251, 251, 0.15);

@@ -36,9 +36,9 @@ export const Tittle = styled.div`
 `;
 
 export const TreeIcon = styled(GiBonsaiTree)`
-  width: 100px;
-  height: 100px;
-  color: var(--darkWhite);
+  width: 105px;
+  height: 105px;
+  color: var(--primary);
   margin-right: 15px;
 
   @media (max-width: 900px) {
@@ -59,7 +59,7 @@ export const HomeIcon = styled(AiFillHome)`
 `;
 
 export const ButtonBackHome = styled.button`
-  background-color: var(--grey);
+  background-color: var(--secundary);
   padding: 4px 20px;
   outline: none;
   border-radius: 7px;

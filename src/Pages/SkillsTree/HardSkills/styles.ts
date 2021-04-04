@@ -16,7 +16,7 @@ export const Title = styled.h2`
   display: flex;
   font-size: 42px;
   margin-bottom: 25px;
-  color: var(--grey);
+  color: var(--primary);
 
   @media (max-width: 900px) {
     font-size: 34px;
