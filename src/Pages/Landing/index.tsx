@@ -39,7 +39,7 @@ const Landing: React.FC = () => {
           <TreeIcon />
         </Button1>
 
-        <Button2>
+        <Button2 onClick={() => navigate('/About')}>
           <UserIcon />
         </Button2>
 

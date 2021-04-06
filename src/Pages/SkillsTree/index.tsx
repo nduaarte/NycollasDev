@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import { GiBonsaiTree } from 'react-icons/gi';
 
-import Header from './Header';
+import Header from '../../Components/Header';
 import InfoTodo from './InfoTodo';
 import SkillModal from '../../Components/SkillModal'
 import HardSkills from './HardSkills';
@@ -20,7 +21,7 @@ const SkillsTree: React.FC = () => {
 
   return (
     <Container>
-      <Header />
+      <Header title='Árvore de Habilidades' icon={GiBonsaiTree} />
       <InfoTodo />
       <Trees>
         <HardSkills />

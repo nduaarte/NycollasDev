@@ -14,12 +14,12 @@ export const Container = styled.div`
 
 export const Title = styled.h2`
   display: flex;
-  font-size: 42px;
+  font-size: 38px;
   margin-bottom: 25px;
   color: var(--primary);
 
   @media (max-width: 900px) {
-    font-size: 34px;
+    font-size: 32px;
   }
 `;
 

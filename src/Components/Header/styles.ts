@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-
-import { GiBonsaiTree } from 'react-icons/gi';
 import { AiFillHome } from 'react-icons/ai';
 
 export const Container = styled.div`
@@ -27,6 +25,7 @@ export const Tittle = styled.div`
     width: 60%;
     font-size: 48px;
     font-weight: 700;
+    margin-left: 15px;
     color: var(--darkWhite);
 
     @media (max-width: 900px) {
@@ -35,32 +34,35 @@ export const Tittle = styled.div`
   }
 `;
 
-export const TreeIcon = styled(GiBonsaiTree)`
-  width: 105px;
-  height: 105px;
-  color: var(--primary);
-  margin-right: 15px;
-
+export const Icon = styled.div`
+  width: 90px;
+  height: 90px;
+  color: var(--secundary);
   @media (max-width: 900px) {
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
   }
 `;
 
 export const HomeIcon = styled(AiFillHome)`
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
   color: var(--white);
 
   @media (max-width: 900px) {
     width: 28px;
     height: 28px;
   }
+
+  @media (max-width: 510px) {
+    width: 24px;
+    height: 24px;
+  }
 `;
 
 export const ButtonBackHome = styled.button`
-  background-color: var(--secundary);
-  padding: 4px 20px;
+  background-color: var(--primary);
+  padding: 4px 18px;
   outline: none;
   border-radius: 7px;
 
@@ -70,6 +72,11 @@ export const ButtonBackHome = styled.button`
 
   @media (max-width: 900px) {
     padding: 2px 15px;
+    border-radius: 4px;
+  }
+
+  @media (max-width: 510px) {
+    padding: 1px 10px;
     border-radius: 4px;
   }
 `;

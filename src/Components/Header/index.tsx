@@ -2,9 +2,14 @@ import React from 'react';
 import { useHistory } from "react-router-dom";
 import { motion } from 'framer-motion';
 
-import { Container, Tittle, TreeIcon, ButtonBackHome, HomeIcon } from './styles';
+import { Container, Tittle, Icon, ButtonBackHome, HomeIcon } from './styles';
 
-const Header: React.FC = () => {
+interface PropsTypes {
+  title: string;
+  icon: any;
+}
+
+const Header: React.FC<PropsTypes> = ({ title, icon }) => {
   const history = useHistory();
 
   function navigate(route: string) {
@@ -15,12 +20,12 @@ const Header: React.FC = () => {
     <Container>
       <motion.div initial={{ opacity: 0.1 }} animate={{ x: 30, opacity: 1 }} transition={{ ease: 'circOut', duration: 1.5 }}>
         <Tittle>
-          <TreeIcon />
-          <h1>Árvore de Habilidades</h1>
+          <Icon as={icon} color='#59d9a5' />
+          <h1>{title}</h1>
         </Tittle>
       </motion.div>
 
-      <motion.div whileHover={{ scale: 1.1 }}>
+      <motion.div whileHover={{ y: 5 }}>
         <ButtonBackHome onClick={() => navigate('/')}>
           <HomeIcon />
         </ButtonBackHome>

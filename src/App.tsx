@@ -6,6 +6,7 @@ import { store } from './redux/index'
 
 import Landing from './Pages/Landing';
 import SkillsTree from './Pages/SkillsTree';
+import About from './Pages/About';
 
 const App: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ const App: React.FC = () => {
       <Switch>
         <Route path="/" exact component={Landing} />
         <Route path="/SkillsTree" component={SkillsTree} />
-        {/* <Route path="/About" component={About}/> */}
+        <Route path="/About" component={About}/>
         {/* <Route path="/Projects" component={Projects}/> */}
       </Switch>
     </Provider>

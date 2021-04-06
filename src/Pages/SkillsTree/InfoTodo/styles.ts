@@ -13,4 +13,5 @@ export const Container = styled.div`
 export const Info = styled.h4`
   color: var(--darkerWhite);
   align-self: center;
+  margin-left: 3px;
 `;
