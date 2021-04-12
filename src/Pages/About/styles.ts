@@ -111,8 +111,9 @@ export const Vector = styled.img`
 
   @media (min-width: 850px) {
     display: flex;
-    width: 600px;
-    margin: 0 0 100px 100px;
+    align-self: center;
+    width: 330px;
+    margin-bottom: 100px;
   }
 `;
 

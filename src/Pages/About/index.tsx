@@ -1,11 +1,12 @@
 import React from 'react';
+
 import { FaUserAlt } from 'react-icons/fa';
 import { BiMap } from 'react-icons/bi';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BiCake } from 'react-icons/bi';
 import { HiOutlineNewspaper } from 'react-icons/hi';
 
-import vector from '../../assets/images/vector_about.svg';
+import vector from '../../assets/images/about.svg';
 
 import {
   Container,
@@ -63,7 +64,6 @@ const About: React.FC = () => {
 
         <RightSide>
           <Vector src={vector} />
-
           <MotivationTitle>Motivação</MotivationTitle>
           <MotivationText>
             Em 2014 comecei a me interessar por programação e fui atrás

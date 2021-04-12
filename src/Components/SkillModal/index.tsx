@@ -1,7 +1,7 @@
 import React from 'react';
 import { CgArrowLongRightL } from 'react-icons/cg';
 
-import { Container, Modal, Description, Title, DataContact, MotivationText } from './styles';
+import { Container, Modal, Image, Description, Title, DataContact, MotivationText } from './styles';
 
 interface PropsTypes {
   onClose?: any;
@@ -16,6 +16,7 @@ const SkillModal: React.FC<PropsTypes> = ({onClose = () => {}}) => {
   return (
     <Container id={id} onClick={handlOutsideClick} >
       <Modal>
+        {/* <Image src={code} /> */}
         <Description>
           <Title>Primeiro Contato</Title>
           <DataContact>
