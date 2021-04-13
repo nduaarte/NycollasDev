@@ -1,36 +1,41 @@
 import React from 'react';
-import { CgArrowLongRightL } from 'react-icons/cg';
+import { MdDateRange } from 'react-icons/md';
+import { useSelector, useDispatch } from 'react-redux';
 
-import { Container, Modal, Image, Description, Title, DataContact, MotivationText } from './styles';
+import { RootState } from '../../redux/SkillReducer';
+import { Container, Modal, DescriptionContainer, Title, DataContact, MotivationText } from './styles';
 
 interface PropsTypes {
   onClose?: any;
 }
 
 const SkillModal: React.FC<PropsTypes> = ({onClose = () => {}}) => {
+  const dispatch = useDispatch();
   const id = 'modal';
   function handlOutsideClick(e: any) {
-    if(e.target.id === id) onClose();
+    if(e.target.id === id) {
+      dispatch({ type: 'UPDATE_IS_VISIBLE', value: false})
+      onClose();
+    }
   }
+
+  const dataContact = useSelector((state: RootState) => state.SkillReducer.dataContact);
+  const motivationText = useSelector((state: RootState) => state.SkillReducer.motivationText);
 
   return (
     <Container id={id} onClick={handlOutsideClick} >
       <Modal>
-        {/* <Image src={code} /> */}
-        <Description>
+        <DescriptionContainer>
           <Title>Primeiro Contato</Title>
           <DataContact>
-            <CgArrowLongRightL />
-            Setembro 2020
+            <MdDateRange size={22} />
+            {dataContact}
           </DataContact>
           <Title>Motivação</Title>
           <MotivationText>
-            Quando eu usava apenas JavaScript em meus projetos e via
-            alguem usando TypeScript, era como se fosse um luxo.
-            Decidi usar pois o editor fica mais inteligente e a depuração
-            se torna mais eficaz sem precisar compilar o projeto.
+            {motivationText}
           </MotivationText>
-        </Description>
+        </DescriptionContainer>
       </Modal>
     </Container>
   );

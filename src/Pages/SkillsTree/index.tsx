@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import styled from 'styled-components';
+
+import { RootState } from '../../redux/SkillReducer';
 import { GiBonsaiTree } from 'react-icons/gi';
 
 import Header from '../../Components/Header';
@@ -10,14 +13,11 @@ import KnowSkills from './KnowSkills';
 
 const SkillsTree: React.FC = () => {
   const [isVisible, setIsVisible] = useState(true);
-
-  function toggle() {
-    return setIsVisible(!isVisible);
-  }
+  const isVisibleRedux = useSelector((state: RootState) => state.SkillReducer.isVisible);
 
   useEffect(() => {
-    toggle();
-  }, []);
+    isVisibleRedux ? setIsVisible(true) : setIsVisible(false);
+  }, [isVisibleRedux]);
 
   return (
     <Container>

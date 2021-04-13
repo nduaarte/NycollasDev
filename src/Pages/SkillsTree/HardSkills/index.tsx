@@ -1,5 +1,8 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 import { motion } from 'framer-motion';
+
+
 import { SiJavascript, SiReact, SiStyledComponents, SiTypescript, SiRedux } from 'react-icons/si';
 import { IoLogoJavascript } from 'react-icons/io';
 import { FaGitSquare } from 'react-icons/fa';
@@ -15,13 +18,24 @@ import {
 } from './styles';
 
 const Tree: React.FC = () => {
+  const dispatch = useDispatch();
+
+  function dispatching(data: string, motivationText: string) {
+    dispatch({ type: 'UPDATE_IS_VISIBLE', value: true });
+    dispatch({ type: 'UPDATE_DATA_CONTACT', value: data });
+    dispatch({ type: 'UPDATE_MOTIVATION_TEXT', value: motivationText });
+  }
+
   return (
     <motion.div initial={{ opacity: 0.1 }} animate={{ opacity: 1 }}>
       <Container>
         <Title>Forte</Title>
 
         <Itens>
-          <Item1>
+          <Item1 onClick={() => dispatching(
+            'Janeiro de 2020', 
+            'Depois de já ter estudado outras linguagens, eu tinha decidido que JavaScript era a linguagem pra seguir no momento.'
+          )}>
             <TreeItem bottom Icon={SiJavascript} iconSize={28} color='#FFF585' />
           </Item1>
 

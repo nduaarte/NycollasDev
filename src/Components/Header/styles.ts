@@ -12,7 +12,7 @@ export const Container = styled.div`
   border-bottom: 1px solid var(--darkGrey);
 
   @media (max-width: 900px) {
-    margin: 10px;
+    margin: 0;
   }
 `;
 
@@ -73,6 +73,7 @@ export const ButtonBackHome = styled.button`
   @media (max-width: 900px) {
     padding: 2px 15px;
     border-radius: 4px;
+    margin-right: 20px;
   }
 
   @media (max-width: 510px) {
