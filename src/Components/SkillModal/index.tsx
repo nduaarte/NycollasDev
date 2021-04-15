@@ -1,9 +1,8 @@
 import React from 'react';
-import { MdDateRange } from 'react-icons/md';
 import { useSelector, useDispatch } from 'react-redux';
 
 import { RootState } from '../../redux/SkillReducer';
-import { Container, Modal, DescriptionContainer, Title, DataContact, MotivationText } from './styles';
+import { Container, Modal, DescriptionContainer, Title, DataContact, CalendarIcon, MotivationText } from './styles';
 
 interface PropsTypes {
   onClose?: any;
@@ -28,7 +27,7 @@ const SkillModal: React.FC<PropsTypes> = ({onClose = () => {}}) => {
         <DescriptionContainer>
           <Title>Primeiro Contato</Title>
           <DataContact>
-            <MdDateRange size={22} />
+            <CalendarIcon />
             {dataContact}
           </DataContact>
           <Title>Motivação</Title>

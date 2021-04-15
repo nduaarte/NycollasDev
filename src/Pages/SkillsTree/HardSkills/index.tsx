@@ -2,13 +2,13 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { motion } from 'framer-motion';
 
-
 import { SiJavascript, SiReact, SiStyledComponents, SiTypescript, SiRedux } from 'react-icons/si';
 import { IoLogoJavascript } from 'react-icons/io';
 import { FaGitSquare } from 'react-icons/fa';
 import { GiHook } from 'react-icons/gi';
 
 import TreeItem from '../../../Components/TreeItem';
+import data from '../../../assets/SkillsData';
 
 import {
   Container,
@@ -20,9 +20,12 @@ import {
 const Tree: React.FC = () => {
   const dispatch = useDispatch();
 
-  function dispatching(data: string, motivationText: string) {
+  function dispatching(index: number) {
+    let dataContact = data[index].dataContact;
+    let motivationText = data[index].motivationText;
+
     dispatch({ type: 'UPDATE_IS_VISIBLE', value: true });
-    dispatch({ type: 'UPDATE_DATA_CONTACT', value: data });
+    dispatch({ type: 'UPDATE_DATA_CONTACT', value: dataContact });
     dispatch({ type: 'UPDATE_MOTIVATION_TEXT', value: motivationText });
   }
 
@@ -32,62 +35,59 @@ const Tree: React.FC = () => {
         <Title>Forte</Title>
 
         <Itens>
-          <Item1 onClick={() => dispatching(
-            'Janeiro de 2020', 
-            'Depois de já ter estudado outras linguagens, eu tinha decidido que JavaScript era a linguagem pra seguir no momento.'
-          )}>
+          <Item1 onClick={() => dispatching(0)}>
             <TreeItem bottom Icon={SiJavascript} iconSize={28} color='#FFF585' />
           </Item1>
 
-          <Item2>
+          <Item2 onClick={() => dispatching(1)}>
             <TreeItem bottom Icon={SiReact} iconSize={34} color='#3CD7F6' />
           </Item2>
 
-          <Item3>
+          <Item3 onClick={() => dispatching(2)}>
             <TreeItem bottom left right Icon={IoLogoJavascript} iconSize={23} color='#FFF585' />
           </Item3>
 
-          <Item4>
+          <Item4 onClick={() => dispatching(3)}>
             <TreeItem left right bottom />
           </Item4>
 
-          <ItemZ>
+          <ItemZ onClick={() => dispatching(4)}>
             <TreeItem />
           </ItemZ>
 
-          <Item5>
+          <Item5 onClick={() => dispatching(5)}>
             <TreeItem bottom />
           </Item5>
 
-          <Item6>
+          <Item6 onClick={() => dispatching(6)}>
             <TreeItem Icon={FaGitSquare} iconSize={30} color='#ED725A' />
           </Item6>
 
-          <Item7>
+          <Item7 onClick={() => dispatching(7)}>
             <TreeItem bottom />
           </Item7>
 
-          <Item8>
+          <Item8 onClick={() => dispatching(8)}>
             <TreeItem Icon={SiStyledComponents} iconSize={38} color='#D66C8E' />
           </Item8>
 
-          <Item9>
+          <Item9 onClick={() => dispatching(9)}>
             <TreeItem left right bottom />
           </Item9>
 
-          <Item10>
+          <Item10 onClick={() => dispatching(10)}>
             <TreeItem bottom Icon={GiHook} iconSize={30} color='#3CD7F6' />
           </Item10>
 
-          <Item11>
+          <Item11 onClick={() => dispatching(11)}>
             <TreeItem Icon={SiTypescript} iconSize={27} color='#4A8DD3' />
           </Item11>
 
-          <Item12>
+          <Item12 onClick={() => dispatching(12)}>
             <TreeItem Icon={SiRedux} iconSize={26} color='#845BC2' />
           </Item12>
 
-          <Item13>
+          <Item13 onClick={() => dispatching(13)}>
             <TreeItem />
           </Item13>
 

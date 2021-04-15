@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { MdDateRange } from 'react-icons/md';
 
 export const Container = styled.button`
   display: flex;
@@ -43,11 +44,22 @@ export const DataContact = styled.span`
   display: flex;
   align-items: center;
   margin-bottom: 30px;
-
+  
   font-size: 24px;
   color: var(--secundary);
   font-weight: bold;
 `;
+
+export const CalendarIcon = styled(MdDateRange)`
+  width: 23px;
+  height: 23px;
+  margin-right: 2px;
+
+  @media (min-width: 900px) {
+    width: 25px;
+    height: 25px;
+  }
+`
 
 export const MotivationText = styled.span`
   color: var(--grey);
@@ -56,7 +68,7 @@ export const MotivationText = styled.span`
   margin-top: 3px;
   font-size: 16px;
 
-  padding-left: 5px;
+  padding-left: 7px;
   border-left: 3px solid var(--secundary);
 
   @media (min-width: 900px) {
