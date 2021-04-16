@@ -15,18 +15,18 @@ const data = [
     motivationText: "Agora mexendo diariamente com React, as features vindas com EcmaScript 6, eram de extrema importância. Por esse motivo, foquei em aprender por completo todas as novas funcionalidades dessa edição de 2015."
   },
   {
-    name: "",
-    dataContact: "",
-    motivationText: ""
+    name: "git",
+    dataContact: "Fevereiro de 2020",
+    motivationText: "Certa vez ouvi alguém dizer que pra se tornar um programador OverPower é necessário criar uma conta no Github e usar as técnicas do Git para contribuir com a comunidade. Com isso, passei a commitar algo todo dia :p"
   },
   {
-    name: "",
-    dataContact: "",
-    motivationText: ""
+    name: "styledcomponents",
+    dataContact: "Julho de 2020",
+    motivationText: "Nessa época, eu desenvolvia todos meus projetos React Native usando o StyleSheet padrão. Certo dia, vi um tutorial onde o dev usava um biblioteca que escrevia os estilos em um arquivo JavaScript e ainda podia criar os Componentes com o nome desses estilos. Tenho que aprender isso, eu pensei. Depois disso, nunca mais larguei o Styled-Components. Simplesmente perfeito!!!"
   },
   {
-    name: "",
-    dataContact: "",
+    name: "reacthooks",
+    dataContact: "Março de 2020",
     motivationText: ""
   },
   {

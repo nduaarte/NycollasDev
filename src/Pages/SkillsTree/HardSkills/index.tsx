@@ -47,47 +47,47 @@ const Tree: React.FC = () => {
             <TreeItem bottom left right Icon={IoLogoJavascript} iconSize={23} color='#FFF585' />
           </Item3>
 
-          <Item4 onClick={() => dispatching(3)}>
+          <Item4>
             <TreeItem left right bottom />
           </Item4>
 
-          <ItemZ onClick={() => dispatching(4)}>
+          <ItemZ>
             <TreeItem />
           </ItemZ>
 
-          <Item5 onClick={() => dispatching(5)}>
+          <Item5>
             <TreeItem bottom />
           </Item5>
 
-          <Item6 onClick={() => dispatching(6)}>
+          <Item6 onClick={() => dispatching(3)}>
             <TreeItem Icon={FaGitSquare} iconSize={30} color='#ED725A' />
           </Item6>
 
-          <Item7 onClick={() => dispatching(7)}>
+          <Item7>
             <TreeItem bottom />
           </Item7>
 
-          <Item8 onClick={() => dispatching(8)}>
+          <Item8 onClick={() => dispatching(4)}>
             <TreeItem Icon={SiStyledComponents} iconSize={38} color='#D66C8E' />
           </Item8>
 
-          <Item9 onClick={() => dispatching(9)}>
+          <Item9>
             <TreeItem left right bottom />
           </Item9>
 
-          <Item10 onClick={() => dispatching(10)}>
+          <Item10>
             <TreeItem bottom Icon={GiHook} iconSize={30} color='#3CD7F6' />
           </Item10>
 
-          <Item11 onClick={() => dispatching(11)}>
+          <Item11>
             <TreeItem Icon={SiTypescript} iconSize={27} color='#4A8DD3' />
           </Item11>
 
-          <Item12 onClick={() => dispatching(12)}>
+          <Item12>
             <TreeItem Icon={SiRedux} iconSize={26} color='#845BC2' />
           </Item12>
 
-          <Item13 onClick={() => dispatching(13)}>
+          <Item13>
             <TreeItem />
           </Item13>
 
