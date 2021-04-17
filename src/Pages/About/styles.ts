@@ -16,9 +16,7 @@ export const InfoAbout = styled.div`
   }
 `;
 
-export const LeftSide = styled.div`
-
-`;
+export const LeftSide = styled.div``;
 
 export const Row = styled.div`
   margin: 20px 0;
@@ -83,7 +81,7 @@ export const ListContainer = styled.ul`
       margin-left: 3px;
 
       @media (min-width: 850px) {
-        font-size: 20px;
+        font-size: 18px;
         margin-left: 6px;
       }
     }
@@ -112,8 +110,8 @@ export const Vector = styled.img`
   @media (min-width: 850px) {
     display: flex;
     align-self: center;
-    width: 330px;
-    margin-bottom: 100px;
+    width: 450px;
+    margin: 60px 0 120px;
   }
 `;
 

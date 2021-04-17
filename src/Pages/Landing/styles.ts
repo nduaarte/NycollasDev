@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { motion } from 'framer-motion';
 
 import { GiBonsaiTree } from 'react-icons/gi';
 import { FaUserAlt } from 'react-icons/fa';
@@ -6,7 +7,7 @@ import { ImBooks } from 'react-icons/im';
 import { VscGithub } from 'react-icons/vsc';
 import { RiCopyrightLine } from 'react-icons/ri';
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   height: 100vh;
   display: flex;
   padding: 20px 0;

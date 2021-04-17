@@ -17,7 +17,7 @@ import {
 
 const KnowSkills: React.FC = () => {
   return (
-    <motion.div initial={{ opacity: 0.1 }} animate={{ opacity: 1 }}>
+    <motion.div initial={{ opacity: 0.1 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
       <Container>
         <Title>Conhecedor</Title>
 
