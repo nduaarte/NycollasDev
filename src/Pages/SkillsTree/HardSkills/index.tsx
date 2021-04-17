@@ -8,7 +8,7 @@ import { FaGitSquare } from 'react-icons/fa';
 import { GiHook } from 'react-icons/gi';
 
 import TreeItem from '../../../Components/TreeItem';
-import data from '../../../assets/SkillsData';
+import data from '../../../assets/SkillsData/hard';
 
 import {
   Container,
@@ -75,15 +75,15 @@ const Tree: React.FC = () => {
             <TreeItem left right bottom />
           </Item9>
 
-          <Item10>
+          <Item10 onClick={() => dispatching(5)}>
             <TreeItem bottom Icon={GiHook} iconSize={30} color='#3CD7F6' />
           </Item10>
 
-          <Item11>
+          <Item11 onClick={() => dispatching(6)}>
             <TreeItem Icon={SiTypescript} iconSize={27} color='#4A8DD3' />
           </Item11>
 
-          <Item12>
+          <Item12 onClick={() => dispatching(7)}>
             <TreeItem Icon={SiRedux} iconSize={26} color='#845BC2' />
           </Item12>
 

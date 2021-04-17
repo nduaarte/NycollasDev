@@ -22,48 +22,24 @@ const data = [
   {
     name: "styledcomponents",
     dataContact: "Julho de 2020",
-    motivationText: "Nessa época, eu desenvolvia todos meus projetos React Native usando o StyleSheet padrão. Certo dia, vi um tutorial onde o dev usava um biblioteca que escrevia os estilos em um arquivo JavaScript e ainda podia criar os Componentes com o nome desses estilos. Tenho que aprender isso, eu pensei. Depois disso, nunca mais larguei o Styled-Components. Simplesmente perfeito!!!"
+    motivationText: "Nessa época, eu desenvolvia todos meus projetos React Native usando o StyleSheet padrão. Certo dia, vi um tutorial onde o dev usava um biblioteca que escrevia os estilos em um arquivo JavaScript e ainda podia criar os Componentes com o nome desses estilos. Tenho que aprender isso, eu pensei. Depois, nunca mais larguei o Styled-Components. Simplesmente perfeito!!!"
   },
   {
     name: "reacthooks",
     dataContact: "Março de 2020",
-    motivationText: ""
+    motivationText: "Uma das coisas mais interessante e eficientes do React. Não há como comparar a legibilidade e a limpeza de um Componente Funcional com Hooks para um Class Component padrão. Dominei os princípais e, quanto tenho a chance, tento aprender algum Hook novo com a comunidade."
   },
   {
-    name: "",
-    dataContact: "",
-    motivationText: ""
+    name: "typescript",
+    dataContact: "Agosto de 2020",
+    motivationText: "Não tem como descrever em palavras o quanto essa tecnologia é incrível. Sempre quando via algum dev utilizando aquele arquivo .ts azul ao invés de .js amarelinho eu achava puro luxo. Uma dia joguei o chapéu e decidi começar um projeto usando o TypeScript. No começo, era muita dor de cabeça, não entendia nada, mas continuei mesmo assim. Hoje, parece que essa tecnologia acrescenta um novo cérebro no meu editor e é MUITO produtivo."
   },
   {
-    name: "",
-    dataContact: "",
-    motivationText: ""
+    name: "redux",
+    dataContact: "Junho de 2020",
+    motivationText: "Nunca tinha ouvido falar do Redux, até um dia eu tentar de tudo que é forma compartilhar um estado usando imports, mas sem sucesso. Pesquisei um pouco e achei essa maravilhosa tecnologia que resolveu todos meus problemas parecendo mágica. Redux me deu muita motivação pois deixava as aplicações mais dinâmicas e abre muitas portas para projetos novos."
   },
-  {
-    name: "",
-    dataContact: "",
-    motivationText: ""
-  },
-  {
-    name: "",
-    dataContact: "",
-    motivationText: ""
-  },
-  {
-    name: "",
-    dataContact: "",
-    motivationText: ""
-  },
-  {
-    name: "",
-    dataContact: "",
-    motivationText: ""
-  },
-  {
-    name: "",
-    dataContact: "",
-    motivationText: ""
-  }
+
 ];
 
 export default data;

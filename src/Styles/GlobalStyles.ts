@@ -35,16 +35,16 @@ export default createGlobalStyle`
   }
 
   :root {
-    --primary: #a061ff;
+    --primary: #6949B6;
     --secundary: #59d9a5;
-    --primaryDark: #4f4263;
+    --primaryDark: #3d324d;
     --background: #121212;
 
     --lightWhite: #ffffff;
     --white: #f0f0f0;
     --darkWhite: #D9D9D9;
     --darkerWhite: #bdbdbd;
-    --grey: #484d4f;
+    --grey: #616669;
     --darkGrey: #2d2f30;
     --darkerGrey: #1c1c1c;
   }

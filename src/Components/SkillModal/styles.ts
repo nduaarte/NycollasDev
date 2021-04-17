@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import { motion } from "framer-motion";
 import { MdDateRange } from 'react-icons/md';
 
-export const Container = styled.button`
+export const Container = styled(motion.div)`
   display: flex;
   align-items: center;
   position: fixed;
@@ -34,18 +35,18 @@ export const DescriptionContainer = styled.div`
   align-items: flex-start;
 `;
 
-export const Title = styled.h2`
+export const Title = styled(motion.h2)`
   color: var(--darkWhite);
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 3px;
 `;
 
-export const DataContact = styled.span`
+export const DataContact = styled(motion.span)`
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   
-  font-size: 24px;
+  font-size: 23px;
   color: var(--secundary);
   font-weight: bold;
 `;
@@ -61,7 +62,7 @@ export const CalendarIcon = styled(MdDateRange)`
   }
 `
 
-export const MotivationText = styled.span`
+export const MotivationText = styled(motion.span)`
   color: var(--grey);
   text-align: left;
   font-weight: bold;
@@ -69,9 +70,9 @@ export const MotivationText = styled.span`
   font-size: 16px;
 
   padding-left: 7px;
-  border-left: 3px solid var(--secundary);
+  border-left: 3px solid var(--primary);
 
   @media (min-width: 900px) {
-    border-left: 4px solid var(--secundary);
+    border-left: 4px solid var(--primary);
   }
 `;

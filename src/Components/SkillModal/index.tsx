@@ -8,12 +8,12 @@ interface PropsTypes {
   onClose?: any;
 }
 
-const SkillModal: React.FC<PropsTypes> = ({onClose = () => {}}) => {
+const SkillModal: React.FC<PropsTypes> = ({ onClose = () => { } }) => {
   const dispatch = useDispatch();
   const id = 'modal';
   function handlOutsideClick(e: any) {
-    if(e.target.id === id) {
-      dispatch({ type: 'UPDATE_IS_VISIBLE', value: false})
+    if (e.target.id === id) {
+      dispatch({ type: 'UPDATE_IS_VISIBLE', value: false })
       onClose();
     }
   }
@@ -22,16 +22,24 @@ const SkillModal: React.FC<PropsTypes> = ({onClose = () => {}}) => {
   const motivationText = useSelector((state: RootState) => state.SkillReducer.motivationText);
 
   return (
-    <Container id={id} onClick={handlOutsideClick} >
+    <Container
+      id={id}
+      onClick={handlOutsideClick}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}>
       <Modal>
         <DescriptionContainer>
-          <Title>Primeiro Contato</Title>
-          <DataContact>
+          <Title initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.15, duration: 1 }}>
+            Primeiro Contato
+          </Title>
+          <DataContact initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3, duration: 1 }}>
             <CalendarIcon />
             {dataContact}
           </DataContact>
-          <Title>Motivação</Title>
-          <MotivationText>
+          <Title initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1, duration: 1 }}>
+            Motivação
+          </Title>
+          <MotivationText initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.6, duration: 1 }}>
             {motivationText}
           </MotivationText>
         </DescriptionContainer>
