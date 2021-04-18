@@ -9,7 +9,7 @@ import { VscGithub } from 'react-icons/vsc';
 export const Container = styled(motion.div)`
   height: 100vh;
   display: flex;
-  padding: 20px 0;
+  padding: 20px 0 0;
 
   flex-direction: column;
   align-items: center;
