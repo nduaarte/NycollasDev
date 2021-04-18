@@ -12,7 +12,7 @@ export const InfoAbout = styled.div`
   @media (min-width: 850px) {
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 50px;
+    margin: 0 50px 100px;
   }
 `;
 

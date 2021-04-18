@@ -5,7 +5,6 @@ import { GiBonsaiTree } from 'react-icons/gi';
 import { FaUserAlt } from 'react-icons/fa';
 import { ImBooks } from 'react-icons/im';
 import { VscGithub } from 'react-icons/vsc';
-import { RiCopyrightLine } from 'react-icons/ri';
 
 export const Container = styled(motion.div)`
   height: 100vh;
@@ -211,19 +210,4 @@ export const Button4 = styled.button`
     width: 120px;
     height: 120px;
   }
-`;
-
-export const Footer = styled.div`
-  display: flex;
-  align-items: center;
-
-  color: var(--grey);
-  font-weight: bold;
-
-  @media (max-width: 600px) {
-    font-size: 14px;
-  }
-`;
-
-export const CopyIcon = styled(RiCopyrightLine)`
 `;

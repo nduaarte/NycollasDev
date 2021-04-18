@@ -7,6 +7,7 @@ import { BiCake } from 'react-icons/bi';
 import { HiOutlineNewspaper } from 'react-icons/hi';
 
 import vector from '../../assets/images/about.svg';
+import Footer from '../../Components/Footer';
 
 import {
   Container,
@@ -89,6 +90,7 @@ const About: React.FC = () => {
           </MotivationText>
         </RightSide>
       </InfoAbout>
+      <Footer />
     </Container >
   );
 }

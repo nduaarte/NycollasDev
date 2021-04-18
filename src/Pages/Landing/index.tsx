@@ -2,6 +2,8 @@ import React from 'react';
 import { useHistory } from "react-router-dom";
 import { motion } from 'framer-motion';
 
+import Footer from '../../Components/Footer';
+
 import {
   Container,
   TitleContainer,
@@ -14,8 +16,6 @@ import {
   UserIcon,
   ProjectIcon,
   GithubIcon,
-  Footer,
-  CopyIcon
 } from './styles';
 
 const Landing: React.FC = () => {
@@ -54,10 +54,7 @@ const Landing: React.FC = () => {
         </a>
       </ButtonsContainer>
 
-      <Footer>
-        <CopyIcon />
-        <p>2021 - Made by Nycollas | Linkedin | Github | Twitter</p>
-      </Footer>
+      <Footer />
     </Container>
   );
 }

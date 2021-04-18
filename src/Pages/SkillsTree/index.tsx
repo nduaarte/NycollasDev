@@ -10,6 +10,7 @@ import InfoTodo from './InfoTodo';
 import SkillModal from '../../Components/SkillModal'
 import HardSkills from './HardSkills';
 import KnowSkills from './KnowSkills';
+import Footer from '../../Components/Footer';
 
 const SkillsTree: React.FC = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -28,6 +29,7 @@ const SkillsTree: React.FC = () => {
         {isVisible ? <SkillModal onClose={() => setIsVisible(false)} /> : null}
         <KnowSkills />
       </Trees>
+      <Footer />
     </Container>
   );
 }
@@ -37,14 +39,14 @@ export default SkillsTree;
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 10px 0 40px;
+  margin: 10px 0;
 `;
 
 const Trees = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 0 25px;
+  margin: 0 25px 100px;
 
   @media (max-width: 700px) {
     flex-direction: column;
