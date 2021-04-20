@@ -8,7 +8,7 @@ import { FaGitSquare } from 'react-icons/fa';
 import { GiHook } from 'react-icons/gi';
 
 import TreeItem from '../../../Components/TreeItem';
-import data from '../../../assets/SkillsData/hard';
+import data from '../../../assets/skills_data/hard';
 
 import {
   Container,
