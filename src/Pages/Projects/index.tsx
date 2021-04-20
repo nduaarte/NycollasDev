@@ -39,12 +39,12 @@ const Container = styled.div`
   }
 
   span {
-    color: var(--secundary);
+    color: var(--grey);
     margin-top: 5px;
     font-size: 14px;
     
     a {
-      color: var(--primary);
+      color: var(--secundary);
       text-decoration: none;
 
       :hover {
