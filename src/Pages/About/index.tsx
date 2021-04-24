@@ -6,7 +6,7 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { BiCake } from 'react-icons/bi';
 import { HiOutlineNewspaper } from 'react-icons/hi';
 
-import vector from '../../assets/images/about.svg';
+import vector from '../../assets/vectors/about.svg';
 import Footer from '../../Components/Footer';
 
 import {

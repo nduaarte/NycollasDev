@@ -1,24 +1,33 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useHistory } from "react-router-dom";
+import { ImBooks } from 'react-icons/im';
+
+import Header from '../../Components/Header';
+import Repo from '../../Components/Repo';
+
+import planetfinder from '../../assets/vectors/planet_finder.svg';
+import venus from '../../assets/vectors/venus2.svg';
 
 const Projects: React.FC = () => {
-  const history = useHistory();
 
-  function navigate(route: string) {
-    history.push(route);
-  }
-
-  return(
+  return (
     <Container>
-      <h1>
-        Página em desenvolvimento.
-      </h1>
-      <span>
-        Você pode ver os principais projetos
-        <a target="_blank" rel="noreferrer" href="https://github.com/redspaace"> clicando aqui</a>
-      </span>
-      <button onClick={() => navigate('/')}>Voltar</button>
+      <Header title='Projetos' icon={ImBooks} />
+
+      <Repo 
+        vector={planetfinder}
+        title='Planet Finder'
+        tecs={['ReactJs', 'TypeScript', 'Styled-Components', 'Redux', 'Axios']}
+        link='https://github.com/redspaace/PLANET-FINDER'
+      />
+
+      <Repo
+        mobile
+        vector={venus}
+        title='Vênus Music'
+        tecs={['React Native', 'TypeScript', 'Expo-AV', 'Redux', 'Styled-Components']}
+        link='https://github.com/redspaace/react-native-venus-2'
+      />
     </Container>
   );
 }
@@ -26,40 +35,6 @@ const Projects: React.FC = () => {
 export default Projects;
 
 const Container = styled.div`
-  height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-
-  h1 {
-    color: var(--primary);
-    display: flex;
-    align-items: center;
-  }
-
-  span {
-    color: var(--grey);
-    margin-top: 5px;
-    font-size: 14px;
-    
-    a {
-      color: var(--secundary);
-      text-decoration: none;
-
-      :hover {
-        color: var(--grey);
-      }
-    }
-  }
-
-  button {
-    margin-top: 50px;
-    color: var(--secundary);
-
-    :hover {
-      color: var(--grey);
-      cursor: pointer;
-    }
-  }
 `;
