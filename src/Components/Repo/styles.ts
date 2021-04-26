@@ -11,14 +11,14 @@ export const Container = styled(motion.div)`
   width: 80%;
   margin-top: 30px;
   padding: 20px 0;
-  border-bottom: 1px solid var(--darkerGrey);
+  border-bottom: 1px solid var(--darkGrey);
 
   @media (min-width: 650px) {
     width: 72%;
     flex-direction: row;
     align-items: flex-start;
     margin-top: 0;
-    padding: 60px 0;
+    padding: 83px 0;
   }
 `;
 
@@ -88,7 +88,11 @@ export const Row = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  width: 75%;
+  width: 100%;
+
+  @media (min-width: 650px) {
+    width: 75%;
+  }
 `;
 
 export const Tecs = styled.ul`

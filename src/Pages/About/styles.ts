@@ -85,6 +85,12 @@ export const ListContainer = styled.ul`
         margin-left: 6px;
       }
     }
+
+    a {
+      display: flex;
+      align-items: center;
+      margin-left: 3px;
+    }
   }
 `;
 

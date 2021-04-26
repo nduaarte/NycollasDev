@@ -5,6 +5,7 @@ import { BiMap } from 'react-icons/bi';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BiCake } from 'react-icons/bi';
 import { HiOutlineNewspaper } from 'react-icons/hi';
+import { FiExternalLink } from 'react-icons/fi';
 
 import vector from '../../assets/vectors/about.svg';
 import Footer from '../../Components/Footer';
@@ -54,17 +55,19 @@ const About: React.FC = () => {
             </li>
             <li>
               <BiCake size={28} color='#59d9a5' />
-              <span>20 de Março 2000</span>
+              <span>20 de Março de 2000</span>
             </li>
             <li>
               <HiOutlineNewspaper size={28} color='#59d9a5' />
               <span>Currículo</span>
+              <a href="https://google.com">
+                <FiExternalLink size={16} color='#6949B6' />
+              </a>
             </li>
           </ListContainer>
         </LeftSide>
 
         <RightSide>
-          <Vector src={vector} />
           <MotivationTitle>Motivação</MotivationTitle>
           <MotivationText>
             Em 2014 comecei a me interessar por programação e fui atrás

@@ -45,4 +45,4 @@ export default createGlobalStyle`
     --darkGrey: #2d2f30;
     --darkerGrey: #1c1c1c;
   }
-`
+`;

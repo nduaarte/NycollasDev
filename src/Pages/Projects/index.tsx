@@ -4,6 +4,7 @@ import { ImBooks } from 'react-icons/im';
 
 import Header from '../../Components/Header';
 import Repo from '../../Components/Repo';
+import Footer from '../../Components/Footer';
 
 import planetfinder from '../../assets/vectors/planet_finder.svg';
 import venus from '../../assets/vectors/venus.svg';
@@ -50,6 +51,8 @@ const Projects: React.FC = () => {
         tecs={['React Native', 'TypeScript', 'Styled-Components']}
         link='https://github.com/redspaace/Cosmos-react-native-2'
       />
+
+      <Footer />
     </Container>
   );
 }
