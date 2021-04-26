@@ -30,9 +30,6 @@ export default createGlobalStyle`
     background: none;
     font-family: Play, sans-serif;
   }
-  ul {
-    list-style: none;
-  }
 
   :root {
     --primary: #6949B6;

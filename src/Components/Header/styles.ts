@@ -7,7 +7,7 @@ export const Container = styled.div`
   flex-direction: row;
   justify-content: space-around;
   
-  margin: 30px 80px 50px;
+  margin: 20px 80px;
   padding-bottom: 30px;
   border-bottom: 1px solid var(--darkGrey);
 

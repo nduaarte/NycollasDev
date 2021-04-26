@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiOutlineMobile } from 'react-icons/ai';
+import { MdPhoneIphone } from 'react-icons/md';
 import { RiComputerLine } from 'react-icons/ri';
 
 import {
@@ -29,12 +29,12 @@ interface PropsTyes {
 const Repo: React.FC<PropsTyes> = ({ vector, title, mobile = false, tecs, link }) => {
 
   return (
-    <Container>
+    <Container initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
       <Vector src={vector} />
       <InfoContent>
         <Title>{title}</Title>
         <PlataformContainer>
-          <PlataformIcon as={mobile ? AiOutlineMobile : RiComputerLine} />
+          <PlataformIcon as={mobile ? MdPhoneIphone : RiComputerLine} />
           <PlataformText>{mobile ? 'Mobile' : 'Website'}</PlataformText>
         </PlataformContainer>
         <Row>
@@ -42,7 +42,7 @@ const Repo: React.FC<PropsTyes> = ({ vector, title, mobile = false, tecs, link }
             {tecs.map(tec => <TectName>{tec}</TectName>)}
           </Tecs>
 
-          <ViewMore>
+          <ViewMore initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5, duration: 1 }}>
             <a href={link} target="_blank" rel="noreferrer">
               <ViewIcon />
               <ViewText>Ver mais</ViewText>
