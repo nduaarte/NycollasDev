@@ -7,7 +7,6 @@ import { BiCake } from 'react-icons/bi';
 import { HiOutlineNewspaper } from 'react-icons/hi';
 import { FiExternalLink } from 'react-icons/fi';
 
-import vector from '../../assets/vectors/about.svg';
 import Footer from '../../Components/Footer';
 
 import {
@@ -21,7 +20,6 @@ import {
   MyNick,
   LeftSide,
   RightSide,
-  Vector,
   MotivationTitle,
   MotivationText
 } from './styles';

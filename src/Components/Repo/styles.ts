@@ -8,17 +8,24 @@ export const Container = styled(motion.div)`
   align-self: center;
   flex-direction: column;
 
+  border: 3px solid var(--darkerGrey);
+  background-color: var(--darkerGrey);
   width: 80%;
-  margin-top: 30px;
-  padding: 20px 0;
-  border-bottom: 1px solid var(--darkGrey);
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 13px;
+
+  :hover {
+    border: 3px solid var(--primary);
+    transition: 500ms;
+  }
 
   @media (min-width: 650px) {
-    width: 72%;
+    width: 60%;
+    margin: 25px 0;
     flex-direction: row;
     align-items: flex-start;
-    margin-top: 0;
-    padding: 83px 0;
+    padding: 45px 25px;
   }
 `;
 
@@ -51,7 +58,7 @@ export const Title = styled.h2`
   margin-top: 5px;
 
   @media (min-width: 650px) {
-    font-size: 50px;
+    font-size: 42px;
   }
 `;
 
@@ -67,11 +74,11 @@ export const PlataformIcon = styled.div`
   color: var(--secundary);
   width: 20px;
   height: 20px;
-  margin-right: 5px;
+  margin-right: 3px;
 
   @media (min-width: 650px) {
-    width: 28px;
-    height: 28px;
+    width: 25px;
+    height: 25px;
   }
 `;
 
@@ -80,7 +87,7 @@ export const PlataformText = styled.h3`
   font-size: 18px;
 
   @media (min-width: 650px) {
-    font-size: 26px;
+    font-size: 22px;
   }
 `;
 
@@ -91,7 +98,7 @@ export const Row = styled.div`
   width: 100%;
 
   @media (min-width: 650px) {
-    width: 75%;
+    width: 90%;
   }
 `;
 

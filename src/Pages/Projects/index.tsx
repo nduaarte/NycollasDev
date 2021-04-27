@@ -34,7 +34,7 @@ const Projects: React.FC = () => {
         mobile
         vector={rpg}
         title='RPG Game'
-        tecs={['Expos', 'React Native', 'TypeScript', 'Redux']}
+        tecs={['Expo', 'React Native', 'TypeScript', 'Redux']}
         link='https://github.com/redspaace/RPG-react-native-expo'
       />
       <Repo
@@ -48,7 +48,7 @@ const Projects: React.FC = () => {
         mobile
         vector={clock}
         title='Pomodoro Clock'
-        tecs={['React Native', 'TypeScript', 'Styled-Components']}
+        tecs={['React Native', 'TypeScript', 'Styled-Components', 'MomentJS']}
         link='https://github.com/redspaace/Cosmos-react-native-2'
       />
 

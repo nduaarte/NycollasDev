@@ -110,17 +110,6 @@ export const RightSide = styled.div`
   margin: 0 10px 20px;
 `;
 
-export const Vector = styled.img`
-  display: none;
-
-  @media (min-width: 850px) {
-    display: flex;
-    align-self: center;
-    width: 450px;
-    margin: 60px 0 120px;
-  }
-`;
-
 export const MotivationTitle = styled.h2`
   color: var(--primary);
   font-size: 28px;
