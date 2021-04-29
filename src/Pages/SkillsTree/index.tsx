@@ -39,14 +39,13 @@ export default SkillsTree;
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 10px 0;
 `;
 
 const Trees = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 0 25px 100px;
+  margin: 0 25px 60px;
 
   @media (max-width: 700px) {
     flex-direction: column;

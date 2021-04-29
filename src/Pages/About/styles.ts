@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-
+  display: flex;
+  flex-direction: column;
 `;
 
 export const InfoAbout = styled.div`
@@ -16,7 +17,17 @@ export const InfoAbout = styled.div`
   }
 `;
 
-export const LeftSide = styled.div``;
+export const LeftSide = styled.div`
+  margin: 20px 0;
+  background-color: var(--darkerGrey);
+  border-radius: 10px;
+  padding: 0 20px;
+
+  @media (min-width: 850px) {
+    margin: 0;
+    padding: 10px 40px;
+  }
+`;
 
 export const Row = styled.div`
   margin: 20px 0;
@@ -26,7 +37,6 @@ export const Row = styled.div`
 
   @media (min-width: 850px) {
     flex-direction: column;
-    align-items: flex-start;
   }
 `;
 
@@ -39,6 +49,9 @@ export const Avatar = styled.img`
     width: 200px;
     height: 200px;
     border-radius: 100px;
+
+    border: 3px solid var(--primary);
+    padding: 5px;
   }
 `;
 
@@ -53,20 +66,20 @@ export const MyName = styled.h3`
 `;
 
 export const MyNick = styled.h3`
-  color: var(--grey);
+  color: var(--secundary);
+  font-size: 10px;
 
   @media (min-width: 850px) {
-    font-size: 20px;
+    font-size: 14px;
+    margin-top: 2px;
   }
 `;
 
 export const ListContainer = styled.ul`
   margin-bottom: 20px;
   padding: 10px;
-  width: 310px;
 
   @media (min-width: 850px) {
-    width: 380px;
     border-top: 1px solid var(--darkGrey);
   }
 
@@ -76,6 +89,7 @@ export const ListContainer = styled.ul`
     margin: 10px 0;
 
     span {
+      font-size: 14px;
       color: var(--darkWhite);
       font-weight: bold;
       margin-left: 3px;

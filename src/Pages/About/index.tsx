@@ -38,27 +38,27 @@ const About: React.FC = () => {
 
             <Collumn>
               <MyName>Nycollas Duarte</MyName>
-              <MyNick>@redspace</MyNick>
+              <MyNick>Desenvolvedor Mobile | React Native</MyNick>
             </Collumn>
           </Row>
 
           <ListContainer>
             <li>
-              <BiMap size={28} color='#59d9a5' />
+              <BiMap size={25} color='#59d9a5' />
               <span>Rio Grande do Sul - Brasil</span>
             </li>
             <li>
-              <HiOutlineMail size={28} color='#59d9a5' />
+              <HiOutlineMail size={25} color='#59d9a5' />
               <span>nycollas.duaarte@hotmail.com</span>
             </li>
             <li>
-              <BiCake size={28} color='#59d9a5' />
+              <BiCake size={25} color='#59d9a5' />
               <span>20 de Março de 2000</span>
             </li>
             <li>
-              <HiOutlineNewspaper size={28} color='#59d9a5' />
+              <HiOutlineNewspaper size={25} color='#59d9a5' />
               <span>Currículo</span>
-              <a href="https://google.com">
+              <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1fC9GwAX9UQb5qpkBPKICQHwXWLMbioBT3eoZ5GGSV9k/edit?usp=sharing">
                 <FiExternalLink size={16} color='#6949B6' />
               </a>
             </li>

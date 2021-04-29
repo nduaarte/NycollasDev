@@ -27,7 +27,6 @@ interface PropsTyes {
 }
 
 const Repo: React.FC<PropsTyes> = ({ vector, title, mobile = false, tecs, link }) => {
-
   return (
     <Container initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
       <Vector src={vector} />

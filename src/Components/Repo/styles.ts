@@ -17,7 +17,7 @@ export const Container = styled(motion.div)`
 
   :hover {
     border: 3px solid var(--primary);
-    transition: 500ms;
+    transition: 200ms;
   }
 
   @media (min-width: 650px) {
@@ -115,25 +115,10 @@ export const Tecs = styled.ul`
 export const TectName = styled.li`
   color: var(--darkWhite);
   font-size: 14px;
+  line-height: 24px;
 
   @media (min-width: 650px) {
     font-size: 18px;
-  }
-`;
-
-export const ViewMore = styled(motion.button)`
-  align-self: flex-end;
-  margin-left: 60px;
-
-  a {
-    display: flex;
-    text-decoration: none;
-    align-items: center;
-  }
-
-  :hover {
-    cursor: pointer;
-    color: var(--grey);
   }
 `;
 
@@ -155,5 +140,29 @@ export const ViewText = styled.span`
 
   @media (min-width: 650px) {
     font-size: 14px;
+  }
+`;
+
+export const ViewMore = styled(motion.button)`
+  align-self: flex-end;
+  margin-left: 60px;
+
+  a {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+  }
+
+  :hover {
+    cursor: pointer;
+  }
+
+  &:hover ${ViewIcon} {
+    color: var(--primary);
+    transition: 200ms;
+  }
+  &:hover ${ViewText} {
+    color: var(--primary);
+    transition: 200ms;
   }
 `;

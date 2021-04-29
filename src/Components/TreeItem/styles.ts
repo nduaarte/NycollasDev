@@ -42,7 +42,6 @@ export const Square = styled.button`
   height: 47px;
   outline: none;
 
-  background-color: var(--blue);
   border: 2px solid var(--grey);
   border-radius: 8px;
 
