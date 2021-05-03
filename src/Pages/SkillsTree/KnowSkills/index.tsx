@@ -7,7 +7,7 @@ import { RiMacLine } from 'react-icons/ri'
 import { SiReact, SiNodeDotJs, SiJest } from 'react-icons/si';
 
 import TreeItem from '../../../Components/TreeItem';
-import data from '../../../assets/skills_data/know';
+import data from '../../../assets/data/know';
 
 import {
   Container,

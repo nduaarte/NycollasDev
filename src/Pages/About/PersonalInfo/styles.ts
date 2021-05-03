@@ -1,23 +1,7 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-export const InfoAbout = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin: 0 20px;
-
-  @media (min-width: 850px) {
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 50px 100px;
-  }
-`;
-
-export const LeftSide = styled.div`
+export const Container = styled(motion.div)`
   margin: 20px 0;
   background-color: var(--darkerGrey);
   border-radius: 10px;
@@ -37,6 +21,16 @@ export const Row = styled.div`
 
   @media (min-width: 850px) {
     flex-direction: column;
+  }
+`;
+
+export const Column = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+
+  span {
+    color: var(--grey);
   }
 `;
 
@@ -106,37 +100,4 @@ export const ListContainer = styled.ul`
       margin-left: 3px;
     }
   }
-`;
-
-export const Collumn = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-left: 10px;
-
-  span {
-    color: var(--grey);
-  }
-`;
-
-export const RightSide = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin: 0 10px 20px;
-`;
-
-export const MotivationTitle = styled.h2`
-  color: var(--primary);
-  font-size: 28px;
-  margin-bottom: 12px;
-
-  @media (min-width: 850px) {
-    font-size: 36px;
-    margin-bottom: 15px;
-  }
-`;
-
-export const MotivationText = styled.p`
-  color: var(--darkerWhite);
-  font-size: 16px;
-  font-weight: bold;
 `;
