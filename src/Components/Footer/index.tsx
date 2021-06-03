@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
           Made by redspace | 
           <a href="https://www.linkedin.com/in/nduaarte/" target="_blank" rel="noreferrer"> Linkedin</a> | 
           <a href="https://github.com/redspaace" target="_blank" rel="noreferrer"> Github</a> | 
-          <a href="https://twitter.com/nduaarte" target="_blank" rel="noreferrer"> Twitter</a>
+          <a> Twitter</a>
         </span>
       </SecondLine>
     </Container>
