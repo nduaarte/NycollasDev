@@ -18,8 +18,7 @@ const Footer: React.FC = () => {
         <span>
           Made by redspace | 
           <a href="https://www.linkedin.com/in/nduaarte/" target="_blank" rel="noreferrer"> Linkedin</a> | 
-          <a href="https://github.com/redspaace" target="_blank" rel="noreferrer"> Github</a> | 
-          <a> Twitter</a>
+          <a href="https://github.com/redspaace" target="_blank" rel="noreferrer"> Github</a> 
         </span>
       </SecondLine>
     </Container>
