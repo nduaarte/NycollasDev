@@ -51,7 +51,7 @@ export const ButtonsContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: 40%;
+  width: 600px;
 
   @media (max-width: 1030px) {
     width: 30%;
