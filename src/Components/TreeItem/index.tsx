@@ -29,7 +29,7 @@ const TreeItem: React.FC<PropsTypes> = ({Icon = AiFillLock, color, top, bottom, 
             </BlockSquare>
           ) : (
             <Square color={color}>
-              <Icon color={color} size={19} />
+              <Icon color={color} size={18} />
             </Square>
           )
         }
