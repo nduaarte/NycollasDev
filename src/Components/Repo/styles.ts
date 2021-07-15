@@ -15,11 +15,6 @@ export const Container = styled(motion.div)`
   padding: 20px;
   border-radius: 13px;
 
-  :hover {
-    border: 3px solid var(--primary);
-    transition: 200ms;
-  }
-
   @media (min-width: 650px) {
     width: 60%;
     margin: 25px 0;
